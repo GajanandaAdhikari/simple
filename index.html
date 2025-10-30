@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple App</title>
+    <title>DevOps Project: Simple CI/CD with Docker & Jekyll</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        p, li {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 0.9em;
+        }
+        .tech-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tech-list li {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, DevOps!</h1>
+    <div class="container">
+        <h1>DevOps Project Showcase: <span style="color: #3498db;">Simple CI/CD</span></h1>
+
+        <p><strong>Project Name:</strong> Simple</p>
+        <p>
+            Simple implementation of **Continuous Integration/Continuous Delivery (CI/CD)**, leveraging **Docker** for a reliable DevOps pipeline.
+        </p>
+
+        <hr>
+
+        <h2>Jekyll Site CI Overview</h2>
+        <p>
+            This project successfully sets up Continuous Integration (CI) for a **Jekyll** static site using **GitHub Actions**. The site is automatically built and validated whenever changes are pushed to the `master` branch or a pull request is created, ensuring rapid feedback and quality control.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>**Automated Jekyll Site Builds:** Triggers automatically on push and pull request events.</li>
+            <li>**Consistent Build Environment:** Uses **Docker** to encapsulate the Jekyll build process, eliminating "it works on my machine" issues.</li>
+        </ul>
+
+        <h2>Technologies Used</h2>
+        <ul class="tech-list">
+            <li><span class="badge">Static Site Generator: Jekyll</span></li>
+            <li><span class="badge">CI/CD: GitHub Actions</span></li>
+            <li><span class="badge">Containerization: Docker</span></li>
+        </ul>
+
+        <h2>Workflow Configuration: CI Pipeline</h2>
+        <p>
+            The Continuous Integration workflow is defined in the file **`.github/workflows/ci.yml`**.
+        </p>
+        <p>
+            The pipeline is configured to:
+            <ul>
+                <li>Trigger on `push` and `pull_request` events targeting the `master` branch.</li>
+                <li>Build the Jekyll site using the official **`jekyll/builder` Docker image**, ensuring a clean and consistent build every time.</li>
+            </ul>
+        </p>
+        <p style="text-align: center; margin-top: 40px; font-style: italic; color: #7f8c8d;">
+            "Demonstrating fundamental CI/CD automation using lightweight, modern DevOps tools."
+        </p>
+    </div>
 </body>
 </html>
